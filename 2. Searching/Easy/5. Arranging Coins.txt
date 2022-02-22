@@ -19,3 +19,8 @@ class Solution {
     return (int)high;
   }
 }
+
+
+
+Highily Optimized Approach
+Formula: (int)(-0.5 + Math.sqrt(2*(long)n + 0.25));
