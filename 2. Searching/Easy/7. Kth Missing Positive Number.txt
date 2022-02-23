@@ -1,0 +1,20 @@
+
+https://leetcode.com/problems/kth-missing-positive-number/submissions/
+
+class Solution {
+    public int findKthPositive(int[] arr, int k) {
+        int start =0;
+        int end=arr.length;
+        int mid;
+        while(start<end){
+            mid = start+(end-start)/2;
+            if(arr[mid]-mid-1>=k){
+                end = mid;
+            }
+            else{
+                start=mid+1;
+            }
+        }
+        return k+start;
+    }
+}
